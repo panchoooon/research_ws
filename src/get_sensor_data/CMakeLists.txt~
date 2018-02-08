@@ -1,0 +1,41 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(get_sensor_data)
+
+find_package(PCL 1.2 REQUIRED)
+
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+  sensor_msgs
+  pcl_ros
+  pcl_conversions
+  image_transport
+  cv_bridge
+  OpenCV REQUIRED
+  image_transport
+)
+
+
+include_directories(include ${catkin_INCLUDE_DIRS})
+
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+#for getKinectdata.cpp
+add_executable(getKinectdata src/getKinectdata.cpp)
+target_link_libraries(getKinectdata ${catkin_LIBRARIES})
+target_link_libraries (getKinectdata ${PCL_LIBRARIES})
+target_link_libraries(getKinectdata ${OpenCV_LIBRARIES})
+
+#for my_visualization.cpp
+add_executable(my_visualization src/my_visualization.cpp)
+target_link_libraries (my_visualization ${PCL_LIBRARIES})
+
+#for my_clustering.cpp
+add_executable(my_clustering src/my_clustering.cpp)
+target_link_libraries(my_clustering ${catkin_LIBRARIES})
+target_link_libraries (my_clustering ${PCL_LIBRARIES})
+target_link_libraries(my_clustering ${OpenCV_LIBRARIES})
+

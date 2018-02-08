@@ -1,0 +1,8 @@
+prefix=/home/pancho/research_ws/devel
+
+Name: pc_preprocessing
+Description: Description of pc_preprocessing
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pancho/research_ws/devel/lib 
+Requires: 
