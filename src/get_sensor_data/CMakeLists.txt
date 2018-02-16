@@ -16,7 +16,6 @@ find_package(catkin REQUIRED COMPONENTS
   image_transport
 )
 
-
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 include_directories(${PCL_INCLUDE_DIRS})
@@ -29,6 +28,12 @@ target_link_libraries(getKinectdata ${catkin_LIBRARIES})
 target_link_libraries (getKinectdata ${PCL_LIBRARIES})
 target_link_libraries(getKinectdata ${OpenCV_LIBRARIES})
 
+#for getKinectdata2.cpp
+add_executable(getKinectdata2 src/getKinectdata2.cpp)
+target_link_libraries(getKinectdata2 ${catkin_LIBRARIES})
+target_link_libraries (getKinectdata2 ${PCL_LIBRARIES})
+target_link_libraries(getKinectdata2 ${OpenCV_LIBRARIES})
+
 #for visualization.cpp
 add_executable(visualization src/visualization.cpp)
 target_link_libraries (visualization ${PCL_LIBRARIES})
@@ -38,4 +43,19 @@ add_executable(clustering src/clustering.cpp)
 target_link_libraries(clustering ${catkin_LIBRARIES})
 target_link_libraries (clustering ${PCL_LIBRARIES})
 target_link_libraries(clustering ${OpenCV_LIBRARIES})
+
+#for downsampling.cpp
+#add_executable(downsampling src/downsampling.cpp)
+#target_link_libraries (downsampling ${PCL_LIBRARIES})
+
+#for pcTocv.cpp
+add_executable(pcTocv src/pcTocv.cpp)
+target_link_libraries(pcTocv ${catkin_LIBRARIES})
+target_link_libraries(pcTocv ${PCL_LIBRARIES})
+target_link_libraries(pcTocv ${OpenCV_LIBRARIES})
+
+#for test.cpp
+#add_executable(test src/test.cpp)
+
+
 

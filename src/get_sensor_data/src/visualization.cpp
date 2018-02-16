@@ -34,7 +34,8 @@ viewerPsycho (pcl::visualization::PCLVisualizer& viewer)
 int
 main (int argc,char **argv)
 {
-    pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZRGBA>);
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZRGB>);
+	
     pcl::io::loadPCDFile (argv[1], *cloud);
 
 
@@ -49,10 +50,10 @@ main (int argc,char **argv)
     //PCLVisualizer
     
     //This will only get called once
-    viewer.runOnVisualizationThreadOnce (viewerOneOff);
+    //viewer.runOnVisualizationThreadOnce (viewerOneOff);
     
     //This will get called once per visualization iteration
-    viewer.runOnVisualizationThread (viewerPsycho);
+    //viewer.runOnVisualizationThread (viewerPsycho);
     while (!viewer.wasStopped ())
     {
     //you can also do cool processing here

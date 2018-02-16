@@ -48,6 +48,8 @@ pcdファイルから点群データを読み込んでkdtreeモジュールで�
 #include <opencv2/highgui/highgui.hpp>
 
 
+using namespace std;
+
 int
 main (int argc, char** argv)
 {
@@ -55,7 +57,11 @@ main (int argc, char** argv)
     pcl::PCLPointCloud2::Ptr cloud_origin (new pcl::PCLPointCloud2()); 
 //1.pcdファイルから読込
     
-    pcl::io::loadPCDFile (argv[1], *cloud_origin);   
+    pcl::io::loadPCDFile (argv[1], *cloud_origin); 
+
+	string argv1 = argv[1];//保存のために argv[1]を文字列型として受け取る。
+
+	cout << "Now processing about:" << argv1 <<endl;  
 
 //2.ダウンサンプリングをする
     //C++の標準出力. ダウンサンプリング前の点群を表示
@@ -87,9 +93,12 @@ main (int argc, char** argv)
 
 
     //保存
+	
+	string down_name = "downed_" + argv1;
+	
 
     pcl::PCDWriter writer;
-    writer.write<pcl::PointXYZRGB> ("table_scene_lms400_downsampled.pcd", *cloud_filtered);
+    writer.write<pcl::PointXYZRGB> (down_name, *cloud_filtered);
 
     //可視化for downsampled
     pcl::visualization::CloudViewer viewer_down ("viewer_downsampled");
@@ -99,37 +108,10 @@ main (int argc, char** argv)
       boost::this_thread::sleep (boost::posix_time::microseconds (100));
     }
 
+	
 
 
-/* うまく領域を指定できないのでとりあえずコメントアウト 17/01/18 pancho
-//3.注目領域抽出   
 
-    //passthrough filter用
-    pcl::PCLPointCloud2::Ptr cloud_passthroughed (new pcl::PCLPointCloud2());
-
-    // filterモジュールのインスタンスpassを作成
-    pcl::PassThrough<pcl::PCLPointCloud2> pass;
-    // 処理する点群を"cloud"と指定
-    pass.setInputCloud (cloud_origin);
-    //フィルタをかける座標を指定
-    pass.setFilterFieldName ("x");
-    //フィルタをかける範囲を指定
-    pass.setFilterLimits (0.0, 0.1);
-    //上記の設定の点群を除去したい場合は, 以下のモジュールでtrueを指定する。
-    //pass.setFilterLimitsNegative (true);
-    //上記の設定で実際にフィルタリングをする
-    pass.filter(*cloud_passthroughed);
-
-    std::cerr << "PointCloud after passthrough filter: " << cloud_passthroughed->width * cloud_passthroughed->height
-       << " data points (" << pcl::getFieldsList (*cloud_passthroughed) << ").\n";
-
-    //セグメンテーションの為に型変換toPointXYZ
-    pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_passthroughed2 (new pcl::PointCloud<pcl::PointXYZ>);
-    pcl::fromPCLPointCloud2(*cloud_passthroughed, *cloud_passthroughed2);
-   
-
-
-*/  
 
 
 
@@ -168,11 +150,15 @@ main (int argc, char** argv)
     extract.filter(*cloud_filtered);
 
 
+
+
     //保存
     pcl::PCDWriter writer2;
-    writer2.write<pcl::PointXYZRGB> ("table_scene_lms400_extracted.pcd", *cloud_filtered);
+	//string extracted_name = "extracted_" + argv[1];
+    //writer2.write<pcl::PointXYZRGB> (extracted_name, *cloud_filtered);
+	
 
-/*    //平面除去後の物体の点群を表示
+    //平面除去後の物体の点群を表示
     std::cerr << "After extracted plane " << cloud_filtered->width * cloud_filtered->height << " data points." << std::endl;
     pcl::visualization::CloudViewer viewer ("viewer_extracted");
     viewer.showCloud (cloud_filtered);
@@ -180,7 +166,7 @@ main (int argc, char** argv)
     {
       boost::this_thread::sleep (boost::posix_time::microseconds (100));
     }
-*/
+
 
 //6.kd-treeクラスタリング
 
@@ -219,12 +205,16 @@ main (int argc, char** argv)
     	}
  	
 	
+
+
 	//保存
 	std::stringstream ss;
-    	ss << "cluster_" << j << ".pcd";
-    	writer.write<pcl::PointXYZRGB> (ss.str (), *cloud_cluster, false); 
-    	j++;
+    ss << "cluster_" << j << ".pcd";
+    writer.write<pcl::PointXYZRGB> (ss.str (), *cloud_cluster, false); 
+    j++;
+	}
 
+/*
 	//ここから、画像に直して出力するコード
         // オブジェクトの各座標における最小、最大値を求める
         double obj_pc_x_min = cloud_cluster->points[*it->indices.begin()].x;//*it->indices.begin():クラスタitの初めの点群を保存
@@ -277,7 +267,7 @@ main (int argc, char** argv)
     	{
       	     boost::this_thread::sleep (boost::posix_time::microseconds (100));
     	}
-	*/
+	
 
         // オブジェクトを抽出したイメージを生成
         /*        
@@ -307,18 +297,9 @@ main (int argc, char** argv)
                       obj_center.y += y;
                   }
               }
-          }*/
+          }
 
-	
-         
-	
-        
-    }
-
-
-    
-
-    
+*/
     
 
 

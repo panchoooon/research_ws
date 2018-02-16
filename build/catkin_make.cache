@@ -1,2 +1,2 @@
-beginner_tutorials:get_sensor_data:pc_preprocessing
+MaskR-CNN:beginner_tutorials:get_sensor_data:pc_preprocessing
 -DCATKIN_DEVEL_PREFIX=/home/pancho/research_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pancho/research_ws/install -G Unix Makefiles

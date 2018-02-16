@@ -402,6 +402,20 @@ getKinectdata/fast:
 .PHONY : getKinectdata/fast
 
 # Convenience name for target.
+get_sensor_data/CMakeFiles/getKinectdata2.dir/rule:
+	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/getKinectdata2.dir/rule
+.PHONY : get_sensor_data/CMakeFiles/getKinectdata2.dir/rule
+
+# Convenience name for target.
+getKinectdata2: get_sensor_data/CMakeFiles/getKinectdata2.dir/rule
+.PHONY : getKinectdata2
+
+# fast build rule for target.
+getKinectdata2/fast:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata2.dir/build.make get_sensor_data/CMakeFiles/getKinectdata2.dir/build
+.PHONY : getKinectdata2/fast
+
+# Convenience name for target.
 get_sensor_data/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
 	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
 .PHONY : get_sensor_data/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
@@ -442,6 +456,20 @@ nodelet_generate_messages_py: get_sensor_data/CMakeFiles/nodelet_generate_messag
 nodelet_generate_messages_py/fast:
 	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/nodelet_generate_messages_py.dir/build.make get_sensor_data/CMakeFiles/nodelet_generate_messages_py.dir/build
 .PHONY : nodelet_generate_messages_py/fast
+
+# Convenience name for target.
+get_sensor_data/CMakeFiles/pcTocv.dir/rule:
+	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/pcTocv.dir/rule
+.PHONY : get_sensor_data/CMakeFiles/pcTocv.dir/rule
+
+# Convenience name for target.
+pcTocv: get_sensor_data/CMakeFiles/pcTocv.dir/rule
+.PHONY : pcTocv
+
+# fast build rule for target.
+pcTocv/fast:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/pcTocv.dir/build.make get_sensor_data/CMakeFiles/pcTocv.dir/build
+.PHONY : pcTocv/fast
 
 # Convenience name for target.
 get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule:
@@ -729,6 +757,54 @@ src/getKinectdata.cpp.s:
 	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata.dir/build.make get_sensor_data/CMakeFiles/getKinectdata.dir/src/getKinectdata.cpp.s
 .PHONY : src/getKinectdata.cpp.s
 
+src/getKinectdata2.o: src/getKinectdata2.cpp.o
+.PHONY : src/getKinectdata2.o
+
+# target to build an object file
+src/getKinectdata2.cpp.o:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata2.dir/build.make get_sensor_data/CMakeFiles/getKinectdata2.dir/src/getKinectdata2.cpp.o
+.PHONY : src/getKinectdata2.cpp.o
+
+src/getKinectdata2.i: src/getKinectdata2.cpp.i
+.PHONY : src/getKinectdata2.i
+
+# target to preprocess a source file
+src/getKinectdata2.cpp.i:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata2.dir/build.make get_sensor_data/CMakeFiles/getKinectdata2.dir/src/getKinectdata2.cpp.i
+.PHONY : src/getKinectdata2.cpp.i
+
+src/getKinectdata2.s: src/getKinectdata2.cpp.s
+.PHONY : src/getKinectdata2.s
+
+# target to generate assembly for a file
+src/getKinectdata2.cpp.s:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata2.dir/build.make get_sensor_data/CMakeFiles/getKinectdata2.dir/src/getKinectdata2.cpp.s
+.PHONY : src/getKinectdata2.cpp.s
+
+src/pcTocv.o: src/pcTocv.cpp.o
+.PHONY : src/pcTocv.o
+
+# target to build an object file
+src/pcTocv.cpp.o:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/pcTocv.dir/build.make get_sensor_data/CMakeFiles/pcTocv.dir/src/pcTocv.cpp.o
+.PHONY : src/pcTocv.cpp.o
+
+src/pcTocv.i: src/pcTocv.cpp.i
+.PHONY : src/pcTocv.i
+
+# target to preprocess a source file
+src/pcTocv.cpp.i:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/pcTocv.dir/build.make get_sensor_data/CMakeFiles/pcTocv.dir/src/pcTocv.cpp.i
+.PHONY : src/pcTocv.cpp.i
+
+src/pcTocv.s: src/pcTocv.cpp.s
+.PHONY : src/pcTocv.s
+
+# target to generate assembly for a file
+src/pcTocv.cpp.s:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/pcTocv.dir/build.make get_sensor_data/CMakeFiles/pcTocv.dir/src/pcTocv.cpp.s
+.PHONY : src/pcTocv.cpp.s
+
 src/visualization.o: src/visualization.cpp.o
 .PHONY : src/visualization.o
 
@@ -778,6 +854,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... getKinectdata"
+	@echo "... getKinectdata2"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
@@ -785,6 +862,7 @@ help:
 	@echo "... nodelet_generate_messages_cpp"
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... nodelet_generate_messages_py"
+	@echo "... pcTocv"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... pcl_msgs_generate_messages_py"
@@ -810,6 +888,12 @@ help:
 	@echo "... src/getKinectdata.o"
 	@echo "... src/getKinectdata.i"
 	@echo "... src/getKinectdata.s"
+	@echo "... src/getKinectdata2.o"
+	@echo "... src/getKinectdata2.i"
+	@echo "... src/getKinectdata2.s"
+	@echo "... src/pcTocv.o"
+	@echo "... src/pcTocv.i"
+	@echo "... src/pcTocv.s"
 	@echo "... src/visualization.o"
 	@echo "... src/visualization.i"
 	@echo "... src/visualization.s"

@@ -25,7 +25,7 @@ ros::Publisher pub_pc2;
 
 //pcl::PointCloud<pcl::PointXYZRGB> cloud_output;
 
-
+int saveflag = 0;
 string num;
 
 void callback(const sensor_msgs::PointCloud2ConstPtr& input)
@@ -37,14 +37,14 @@ void callback(const sensor_msgs::PointCloud2ConstPtr& input)
 	
 	
 	//sensor_msgs/PointCloud2　型のメッセージをPublish
-	sensor_msgs::PointCloud2 output;
+	/*sensor_msgs::PointCloud2 output;
 	output = *input;
-	pub_in.publish(output);
+	pub_in.publish(output);*/
 
 	//sensor_msgs/PointCloud2　から pcl::PCLPointCloud2へ型変換
-	pcl::PCLPointCloud2 pcl_pc2;
+	/*pcl::PCLPointCloud2 pcl_pc2;
 	pcl_conversions::toPCL(*input, pcl_pc2);
-
+	*/
 
 	
 	pcl::PointCloud<pcl::PointXYZRGB> cloud_output;// (new pcl::PointCloud<pcl::PointXYZRGB>);
@@ -55,7 +55,7 @@ void callback(const sensor_msgs::PointCloud2ConstPtr& input)
 
 	pcl::io::savePCDFileASCII (file_name, cloud_output);
 
-	
+	saveflag = 1;
 
 }
 
@@ -89,7 +89,7 @@ int main(int argc, char **argv)
 
 	while (ros::ok()) {
     ros::spinOnce();
-    	if (i==2){
+    	if (saveflag==1){
      	 exit(1);
      	 }
     	else{
@@ -97,9 +97,12 @@ int main(int argc, char **argv)
       	  spin_rate.sleep();
     	}
   	}
-	
 
-//	ros::spin();
+	
+	//while(saveflag == 0);
+	//	ros::spin();
+
+	
 
 	return 0;
 }
