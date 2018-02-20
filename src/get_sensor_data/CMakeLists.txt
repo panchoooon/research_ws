@@ -54,8 +54,20 @@ target_link_libraries(pcTocv ${catkin_LIBRARIES})
 target_link_libraries(pcTocv ${PCL_LIBRARIES})
 target_link_libraries(pcTocv ${OpenCV_LIBRARIES})
 
+#for ReductPcd.cpp
+add_executable(ReductPcd src/ReductPcd.cpp)
+target_link_libraries(ReductPcd ${catkin_LIBRARIES})
+target_link_libraries(ReductPcd ${PCL_LIBRARIES})
+target_link_libraries(ReductPcd ${OpenCV_LIBRARIES})
+
+#for cloudtorange.cpp
+add_executable(cloudtorange src/cloudtorange.cpp)
+target_link_libraries(cloudtorange ${catkin_LIBRARIES})
+target_link_libraries(cloudtorange ${PCL_LIBRARIES})
+target_link_libraries(cloudtorange ${OpenCV_LIBRARIES})
+
 #for test.cpp
-#add_executable(test src/test.cpp)
-
-
-
+add_executable(test src/test.cpp)
+target_link_libraries(test ${catkin_LIBRARIES})
+target_link_libraries(test ${PCL_LIBRARIES})
+target_link_libraries(test ${OpenCV_LIBRARIES})

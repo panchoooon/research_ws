@@ -150,130 +150,32 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-get_sensor_data/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+get_sensor_data/CMakeFiles/ReductPcd.dir/rule:
+	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/ReductPcd.dir/rule
+.PHONY : get_sensor_data/CMakeFiles/ReductPcd.dir/rule
 
 # Convenience name for target.
-actionlib_generate_messages_cpp: get_sensor_data/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-.PHONY : actionlib_generate_messages_cpp
+ReductPcd: get_sensor_data/CMakeFiles/ReductPcd.dir/rule
+.PHONY : ReductPcd
 
 # fast build rule for target.
-actionlib_generate_messages_cpp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make get_sensor_data/CMakeFiles/actionlib_generate_messages_cpp.dir/build
-.PHONY : actionlib_generate_messages_cpp/fast
+ReductPcd/fast:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd.dir/build.make get_sensor_data/CMakeFiles/ReductPcd.dir/build
+.PHONY : ReductPcd/fast
 
 # Convenience name for target.
-get_sensor_data/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+get_sensor_data/CMakeFiles/cloudtorange.dir/rule:
+	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/cloudtorange.dir/rule
+.PHONY : get_sensor_data/CMakeFiles/cloudtorange.dir/rule
 
 # Convenience name for target.
-actionlib_generate_messages_lisp: get_sensor_data/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-.PHONY : actionlib_generate_messages_lisp
+cloudtorange: get_sensor_data/CMakeFiles/cloudtorange.dir/rule
+.PHONY : cloudtorange
 
 # fast build rule for target.
-actionlib_generate_messages_lisp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make get_sensor_data/CMakeFiles/actionlib_generate_messages_lisp.dir/build
-.PHONY : actionlib_generate_messages_lisp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/actionlib_generate_messages_py.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/actionlib_generate_messages_py.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/actionlib_generate_messages_py.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_py: get_sensor_data/CMakeFiles/actionlib_generate_messages_py.dir/rule
-.PHONY : actionlib_generate_messages_py
-
-# fast build rule for target.
-actionlib_generate_messages_py/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/actionlib_generate_messages_py.dir/build.make get_sensor_data/CMakeFiles/actionlib_generate_messages_py.dir/build
-.PHONY : actionlib_generate_messages_py/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_cpp: get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-.PHONY : actionlib_msgs_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_cpp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
-.PHONY : actionlib_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_lisp: get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-.PHONY : actionlib_msgs_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_lisp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
-.PHONY : actionlib_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_py: get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-.PHONY : actionlib_msgs_generate_messages_py
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_py/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make get_sensor_data/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
-.PHONY : actionlib_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/bond_generate_messages_cpp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/bond_generate_messages_cpp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/bond_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_cpp: get_sensor_data/CMakeFiles/bond_generate_messages_cpp.dir/rule
-.PHONY : bond_generate_messages_cpp
-
-# fast build rule for target.
-bond_generate_messages_cpp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/bond_generate_messages_cpp.dir/build.make get_sensor_data/CMakeFiles/bond_generate_messages_cpp.dir/build
-.PHONY : bond_generate_messages_cpp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/bond_generate_messages_lisp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/bond_generate_messages_lisp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/bond_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_lisp: get_sensor_data/CMakeFiles/bond_generate_messages_lisp.dir/rule
-.PHONY : bond_generate_messages_lisp
-
-# fast build rule for target.
-bond_generate_messages_lisp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/bond_generate_messages_lisp.dir/build.make get_sensor_data/CMakeFiles/bond_generate_messages_lisp.dir/build
-.PHONY : bond_generate_messages_lisp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/bond_generate_messages_py.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/bond_generate_messages_py.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/bond_generate_messages_py.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_py: get_sensor_data/CMakeFiles/bond_generate_messages_py.dir/rule
-.PHONY : bond_generate_messages_py
-
-# fast build rule for target.
-bond_generate_messages_py/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/bond_generate_messages_py.dir/build.make get_sensor_data/CMakeFiles/bond_generate_messages_py.dir/build
-.PHONY : bond_generate_messages_py/fast
+cloudtorange/fast:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/cloudtorange.dir/build.make get_sensor_data/CMakeFiles/cloudtorange.dir/build
+.PHONY : cloudtorange/fast
 
 # Convenience name for target.
 get_sensor_data/CMakeFiles/clustering.dir/rule:
@@ -288,104 +190,6 @@ clustering: get_sensor_data/CMakeFiles/clustering.dir/rule
 clustering/fast:
 	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/clustering.dir/build.make get_sensor_data/CMakeFiles/clustering.dir/build
 .PHONY : clustering/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_gencfg: get_sensor_data/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-.PHONY : dynamic_reconfigure_gencfg
-
-# fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make get_sensor_data/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_cpp: get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_lisp: get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : dynamic_reconfigure_generate_messages_lisp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_py: get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : dynamic_reconfigure_generate_messages_py
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make get_sensor_data/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_py/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make get_sensor_data/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 get_sensor_data/CMakeFiles/getKinectdata.dir/rule:
@@ -416,48 +220,6 @@ getKinectdata2/fast:
 .PHONY : getKinectdata2/fast
 
 # Convenience name for target.
-get_sensor_data/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_cpp: get_sensor_data/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
-.PHONY : nodelet_generate_messages_cpp
-
-# fast build rule for target.
-nodelet_generate_messages_cpp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make get_sensor_data/CMakeFiles/nodelet_generate_messages_cpp.dir/build
-.PHONY : nodelet_generate_messages_cpp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_lisp: get_sensor_data/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-.PHONY : nodelet_generate_messages_lisp
-
-# fast build rule for target.
-nodelet_generate_messages_lisp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make get_sensor_data/CMakeFiles/nodelet_generate_messages_lisp.dir/build
-.PHONY : nodelet_generate_messages_lisp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/nodelet_generate_messages_py.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/nodelet_generate_messages_py.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/nodelet_generate_messages_py.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_py: get_sensor_data/CMakeFiles/nodelet_generate_messages_py.dir/rule
-.PHONY : nodelet_generate_messages_py
-
-# fast build rule for target.
-nodelet_generate_messages_py/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/nodelet_generate_messages_py.dir/build.make get_sensor_data/CMakeFiles/nodelet_generate_messages_py.dir/build
-.PHONY : nodelet_generate_messages_py/fast
-
-# Convenience name for target.
 get_sensor_data/CMakeFiles/pcTocv.dir/rule:
 	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/pcTocv.dir/rule
 .PHONY : get_sensor_data/CMakeFiles/pcTocv.dir/rule
@@ -472,230 +234,6 @@ pcTocv/fast:
 .PHONY : pcTocv/fast
 
 # Convenience name for target.
-get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-pcl_msgs_generate_messages_cpp: get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
-.PHONY : pcl_msgs_generate_messages_cpp
-
-# fast build rule for target.
-pcl_msgs_generate_messages_cpp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
-.PHONY : pcl_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-pcl_msgs_generate_messages_lisp: get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
-.PHONY : pcl_msgs_generate_messages_lisp
-
-# fast build rule for target.
-pcl_msgs_generate_messages_lisp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
-.PHONY : pcl_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-pcl_msgs_generate_messages_py: get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
-.PHONY : pcl_msgs_generate_messages_py
-
-# fast build rule for target.
-pcl_msgs_generate_messages_py/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make get_sensor_data/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
-.PHONY : pcl_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/pcl_ros_gencfg.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/pcl_ros_gencfg.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/pcl_ros_gencfg.dir/rule
-
-# Convenience name for target.
-pcl_ros_gencfg: get_sensor_data/CMakeFiles/pcl_ros_gencfg.dir/rule
-.PHONY : pcl_ros_gencfg
-
-# fast build rule for target.
-pcl_ros_gencfg/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/pcl_ros_gencfg.dir/build.make get_sensor_data/CMakeFiles/pcl_ros_gencfg.dir/build
-.PHONY : pcl_ros_gencfg/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make get_sensor_data/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_cpp: get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : tf2_msgs_generate_messages_cpp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_lisp: get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_py: get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make get_sensor_data/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_cpp: get_sensor_data/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/tf_generate_messages_cpp.dir/build.make get_sensor_data/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_lisp: get_sensor_data/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/tf_generate_messages_lisp.dir/build.make get_sensor_data/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/tf_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_py: get_sensor_data/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/tf_generate_messages_py.dir/build.make get_sensor_data/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_cpp: get_sensor_data/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-.PHONY : topic_tools_generate_messages_cpp
-
-# fast build rule for target.
-topic_tools_generate_messages_cpp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make get_sensor_data/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-.PHONY : topic_tools_generate_messages_cpp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_lisp: get_sensor_data/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-.PHONY : topic_tools_generate_messages_lisp
-
-# fast build rule for target.
-topic_tools_generate_messages_lisp/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make get_sensor_data/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
-.PHONY : topic_tools_generate_messages_lisp/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_py: get_sensor_data/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-.PHONY : topic_tools_generate_messages_py
-
-# fast build rule for target.
-topic_tools_generate_messages_py/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/topic_tools_generate_messages_py.dir/build.make get_sensor_data/CMakeFiles/topic_tools_generate_messages_py.dir/build
-.PHONY : topic_tools_generate_messages_py/fast
-
-# Convenience name for target.
 get_sensor_data/CMakeFiles/visualization.dir/rule:
 	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/visualization.dir/rule
 .PHONY : get_sensor_data/CMakeFiles/visualization.dir/rule
@@ -708,6 +246,54 @@ visualization: get_sensor_data/CMakeFiles/visualization.dir/rule
 visualization/fast:
 	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/visualization.dir/build.make get_sensor_data/CMakeFiles/visualization.dir/build
 .PHONY : visualization/fast
+
+src/ReductPcd.o: src/ReductPcd.cpp.o
+.PHONY : src/ReductPcd.o
+
+# target to build an object file
+src/ReductPcd.cpp.o:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd.dir/build.make get_sensor_data/CMakeFiles/ReductPcd.dir/src/ReductPcd.cpp.o
+.PHONY : src/ReductPcd.cpp.o
+
+src/ReductPcd.i: src/ReductPcd.cpp.i
+.PHONY : src/ReductPcd.i
+
+# target to preprocess a source file
+src/ReductPcd.cpp.i:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd.dir/build.make get_sensor_data/CMakeFiles/ReductPcd.dir/src/ReductPcd.cpp.i
+.PHONY : src/ReductPcd.cpp.i
+
+src/ReductPcd.s: src/ReductPcd.cpp.s
+.PHONY : src/ReductPcd.s
+
+# target to generate assembly for a file
+src/ReductPcd.cpp.s:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd.dir/build.make get_sensor_data/CMakeFiles/ReductPcd.dir/src/ReductPcd.cpp.s
+.PHONY : src/ReductPcd.cpp.s
+
+src/cloudtorange.o: src/cloudtorange.cpp.o
+.PHONY : src/cloudtorange.o
+
+# target to build an object file
+src/cloudtorange.cpp.o:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/cloudtorange.dir/build.make get_sensor_data/CMakeFiles/cloudtorange.dir/src/cloudtorange.cpp.o
+.PHONY : src/cloudtorange.cpp.o
+
+src/cloudtorange.i: src/cloudtorange.cpp.i
+.PHONY : src/cloudtorange.i
+
+# target to preprocess a source file
+src/cloudtorange.cpp.i:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/cloudtorange.dir/build.make get_sensor_data/CMakeFiles/cloudtorange.dir/src/cloudtorange.cpp.i
+.PHONY : src/cloudtorange.cpp.i
+
+src/cloudtorange.s: src/cloudtorange.cpp.s
+.PHONY : src/cloudtorange.s
+
+# target to generate assembly for a file
+src/cloudtorange.cpp.s:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/cloudtorange.dir/build.make get_sensor_data/CMakeFiles/cloudtorange.dir/src/cloudtorange.cpp.s
+.PHONY : src/cloudtorange.cpp.s
 
 src/clustering.o: src/clustering.cpp.o
 .PHONY : src/clustering.o
@@ -835,53 +421,26 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... actionlib_generate_messages_cpp"
-	@echo "... actionlib_generate_messages_lisp"
-	@echo "... actionlib_generate_messages_py"
-	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... actionlib_msgs_generate_messages_lisp"
-	@echo "... actionlib_msgs_generate_messages_py"
-	@echo "... bond_generate_messages_cpp"
-	@echo "... bond_generate_messages_lisp"
-	@echo "... bond_generate_messages_py"
+	@echo "... ReductPcd"
+	@echo "... cloudtorange"
 	@echo "... clustering"
-	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
-	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... edit_cache"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... getKinectdata"
 	@echo "... getKinectdata2"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... nodelet_generate_messages_cpp"
-	@echo "... nodelet_generate_messages_lisp"
-	@echo "... nodelet_generate_messages_py"
 	@echo "... pcTocv"
-	@echo "... pcl_msgs_generate_messages_cpp"
-	@echo "... pcl_msgs_generate_messages_lisp"
-	@echo "... pcl_msgs_generate_messages_py"
-	@echo "... pcl_ros_gencfg"
 	@echo "... rebuild_cache"
-	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... test"
-	@echo "... tf2_msgs_generate_messages_cpp"
-	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... tf_generate_messages_py"
-	@echo "... topic_tools_generate_messages_cpp"
-	@echo "... topic_tools_generate_messages_lisp"
-	@echo "... topic_tools_generate_messages_py"
 	@echo "... visualization"
+	@echo "... src/ReductPcd.o"
+	@echo "... src/ReductPcd.i"
+	@echo "... src/ReductPcd.s"
+	@echo "... src/cloudtorange.o"
+	@echo "... src/cloudtorange.i"
+	@echo "... src/cloudtorange.s"
 	@echo "... src/clustering.o"
 	@echo "... src/clustering.i"
 	@echo "... src/clustering.s"

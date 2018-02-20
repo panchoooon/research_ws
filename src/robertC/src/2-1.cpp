@@ -1,0 +1,39 @@
+#include <iostream>
+
+#define ELEM(array)  (sizeof (array) / sizeof *(array))
+
+using namespace std;
+
+class SStudent
+{
+public:
+    char szName[16];
+    int  nJapanese;
+    int  nMath;
+    int  nEnglish;
+
+    void Disp();
+};
+
+void SStudent::Disp()
+{
+    cout << "name : "   << szName    << endl
+         << "Japanese: " << nJapanese << " Points, "
+            "Math: "   << nMath     << " Points, "
+            "English: "   << nEnglish  << " Points" << endl;
+}
+
+int main()
+{
+    SStudent students[] = {
+        { "dalvish",   73, 98, 86, },
+        { "senga", 64, 45, 40, },
+        { "aoki",   76, 78, 69, },
+    };
+    int      i;
+
+    for(i = 0; i < ELEM(students); i++)
+        students[i].Disp();
+
+    return 0;
+}

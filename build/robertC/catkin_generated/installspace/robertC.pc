@@ -1,0 +1,8 @@
+prefix=/home/pancho/research_ws/install
+
+Name: robertC
+Description: Description of robertC
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pancho/research_ws/install/lib 
+Requires: 

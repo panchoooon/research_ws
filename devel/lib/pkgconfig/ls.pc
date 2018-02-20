@@ -1,0 +1,8 @@
+prefix=/home/pancho/research_ws/devel
+
+Name: ls
+Description: Description of ls
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pancho/research_ws/devel/lib 
+Requires: 

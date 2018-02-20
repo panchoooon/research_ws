@@ -1,0 +1,21 @@
+#include <iostream>
+#include <pcl/point_types.h>
+#include <pcl/filters/radius_outlier_removal.h>
+#include <pcl/filters/conditional_removal.h>
+
+
+int
+ main (int argc, char** argv)
+{
+	pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZRGB>);
+  	pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_filtered (new pcl::PointCloud<pcl::PointXYZRGB>);
+
+
+	pcl::io::loadPCDFile (argv[1], *cloud);
+
+	pcl::RadiusOutlierRemoval<pcl::PointXYZRGB> outrem;
+	outrem.setInputCloud(cloud);
+    outrem.setRadiusSearch(0.8);
+    outrem.setMinNeighborsInRadius (2);
+	outrem.filter (*cloud_filtered);
+}

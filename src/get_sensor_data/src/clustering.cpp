@@ -68,6 +68,9 @@ main (int argc, char** argv)
     std::cerr << "PointCloud before downsampling: " << cloud_origin->width * cloud_origin->height 
        << " data points (" << pcl::getFieldsList (*cloud_origin) << ").\n";
 
+    std::cout <<"original width. " << cloud_origin->width << endl; 
+    std::cout <<"original height. " << cloud_origin->height << endl; 
+
     //ダウンサンプリング後の点群を入れる
     pcl::PCLPointCloud2::Ptr cloud_downsampled (new pcl::PCLPointCloud2()); 
      
@@ -90,16 +93,18 @@ main (int argc, char** argv)
     std::cerr << "PointCloud after downsampling: " << cloud_filtered->width * cloud_filtered->height 
        << " data points (" << pcl::getFieldsList (*cloud_filtered) << ").\n";
 
+    std::cout <<"downed width. " << cloud_filtered->width << endl; 
+    std::cout <<"downed height. " << cloud_filtered->height << endl; 
 
 
     //保存
-	
+	/*
 	string down_name = "downed_" + argv1;
-	
+	*/
 
     pcl::PCDWriter writer;
-    writer.write<pcl::PointXYZRGB> (down_name, *cloud_filtered);
-
+    //writer.write<pcl::PointXYZRGB> (down_name, *cloud_filtered);
+    
     //可視化for downsampled
     pcl::visualization::CloudViewer viewer_down ("viewer_downsampled");
     viewer_down.showCloud (cloud_filtered);

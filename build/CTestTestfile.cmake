@@ -6,6 +6,8 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(MaskR-CNN)
+SUBDIRS(ls)
+SUBDIRS(robertC)
 SUBDIRS(beginner_tutorials)
 SUBDIRS(get_sensor_data)
 SUBDIRS(pc_preprocessing)
