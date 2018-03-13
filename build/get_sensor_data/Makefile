@@ -164,6 +164,20 @@ ReductPcd/fast:
 .PHONY : ReductPcd/fast
 
 # Convenience name for target.
+get_sensor_data/CMakeFiles/ReductPcd2.dir/rule:
+	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/ReductPcd2.dir/rule
+.PHONY : get_sensor_data/CMakeFiles/ReductPcd2.dir/rule
+
+# Convenience name for target.
+ReductPcd2: get_sensor_data/CMakeFiles/ReductPcd2.dir/rule
+.PHONY : ReductPcd2
+
+# fast build rule for target.
+ReductPcd2/fast:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd2.dir/build.make get_sensor_data/CMakeFiles/ReductPcd2.dir/build
+.PHONY : ReductPcd2/fast
+
+# Convenience name for target.
 get_sensor_data/CMakeFiles/cloudtorange.dir/rule:
 	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/cloudtorange.dir/rule
 .PHONY : get_sensor_data/CMakeFiles/cloudtorange.dir/rule
@@ -204,20 +218,6 @@ getKinectdata: get_sensor_data/CMakeFiles/getKinectdata.dir/rule
 getKinectdata/fast:
 	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata.dir/build.make get_sensor_data/CMakeFiles/getKinectdata.dir/build
 .PHONY : getKinectdata/fast
-
-# Convenience name for target.
-get_sensor_data/CMakeFiles/getKinectdata2.dir/rule:
-	cd /home/pancho/research_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/getKinectdata2.dir/rule
-.PHONY : get_sensor_data/CMakeFiles/getKinectdata2.dir/rule
-
-# Convenience name for target.
-getKinectdata2: get_sensor_data/CMakeFiles/getKinectdata2.dir/rule
-.PHONY : getKinectdata2
-
-# fast build rule for target.
-getKinectdata2/fast:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata2.dir/build.make get_sensor_data/CMakeFiles/getKinectdata2.dir/build
-.PHONY : getKinectdata2/fast
 
 # Convenience name for target.
 get_sensor_data/CMakeFiles/pcTocv.dir/rule:
@@ -270,6 +270,30 @@ src/ReductPcd.s: src/ReductPcd.cpp.s
 src/ReductPcd.cpp.s:
 	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd.dir/build.make get_sensor_data/CMakeFiles/ReductPcd.dir/src/ReductPcd.cpp.s
 .PHONY : src/ReductPcd.cpp.s
+
+src/ReductPcd2.o: src/ReductPcd2.cpp.o
+.PHONY : src/ReductPcd2.o
+
+# target to build an object file
+src/ReductPcd2.cpp.o:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd2.dir/build.make get_sensor_data/CMakeFiles/ReductPcd2.dir/src/ReductPcd2.cpp.o
+.PHONY : src/ReductPcd2.cpp.o
+
+src/ReductPcd2.i: src/ReductPcd2.cpp.i
+.PHONY : src/ReductPcd2.i
+
+# target to preprocess a source file
+src/ReductPcd2.cpp.i:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd2.dir/build.make get_sensor_data/CMakeFiles/ReductPcd2.dir/src/ReductPcd2.cpp.i
+.PHONY : src/ReductPcd2.cpp.i
+
+src/ReductPcd2.s: src/ReductPcd2.cpp.s
+.PHONY : src/ReductPcd2.s
+
+# target to generate assembly for a file
+src/ReductPcd2.cpp.s:
+	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd2.dir/build.make get_sensor_data/CMakeFiles/ReductPcd2.dir/src/ReductPcd2.cpp.s
+.PHONY : src/ReductPcd2.cpp.s
 
 src/cloudtorange.o: src/cloudtorange.cpp.o
 .PHONY : src/cloudtorange.o
@@ -343,30 +367,6 @@ src/getKinectdata.cpp.s:
 	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata.dir/build.make get_sensor_data/CMakeFiles/getKinectdata.dir/src/getKinectdata.cpp.s
 .PHONY : src/getKinectdata.cpp.s
 
-src/getKinectdata2.o: src/getKinectdata2.cpp.o
-.PHONY : src/getKinectdata2.o
-
-# target to build an object file
-src/getKinectdata2.cpp.o:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata2.dir/build.make get_sensor_data/CMakeFiles/getKinectdata2.dir/src/getKinectdata2.cpp.o
-.PHONY : src/getKinectdata2.cpp.o
-
-src/getKinectdata2.i: src/getKinectdata2.cpp.i
-.PHONY : src/getKinectdata2.i
-
-# target to preprocess a source file
-src/getKinectdata2.cpp.i:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata2.dir/build.make get_sensor_data/CMakeFiles/getKinectdata2.dir/src/getKinectdata2.cpp.i
-.PHONY : src/getKinectdata2.cpp.i
-
-src/getKinectdata2.s: src/getKinectdata2.cpp.s
-.PHONY : src/getKinectdata2.s
-
-# target to generate assembly for a file
-src/getKinectdata2.cpp.s:
-	cd /home/pancho/research_ws/build && $(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata2.dir/build.make get_sensor_data/CMakeFiles/getKinectdata2.dir/src/getKinectdata2.cpp.s
-.PHONY : src/getKinectdata2.cpp.s
-
 src/pcTocv.o: src/pcTocv.cpp.o
 .PHONY : src/pcTocv.o
 
@@ -422,11 +422,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... ReductPcd"
+	@echo "... ReductPcd2"
 	@echo "... cloudtorange"
 	@echo "... clustering"
 	@echo "... edit_cache"
 	@echo "... getKinectdata"
-	@echo "... getKinectdata2"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
@@ -438,6 +438,9 @@ help:
 	@echo "... src/ReductPcd.o"
 	@echo "... src/ReductPcd.i"
 	@echo "... src/ReductPcd.s"
+	@echo "... src/ReductPcd2.o"
+	@echo "... src/ReductPcd2.i"
+	@echo "... src/ReductPcd2.s"
 	@echo "... src/cloudtorange.o"
 	@echo "... src/cloudtorange.i"
 	@echo "... src/cloudtorange.s"
@@ -447,9 +450,6 @@ help:
 	@echo "... src/getKinectdata.o"
 	@echo "... src/getKinectdata.i"
 	@echo "... src/getKinectdata.s"
-	@echo "... src/getKinectdata2.o"
-	@echo "... src/getKinectdata2.i"
-	@echo "... src/getKinectdata2.s"
 	@echo "... src/pcTocv.o"
 	@echo "... src/pcTocv.i"
 	@echo "... src/pcTocv.s"

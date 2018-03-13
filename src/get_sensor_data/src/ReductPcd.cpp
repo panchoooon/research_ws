@@ -82,7 +82,7 @@ main(int argc,char **argv)
 	cout << "Passed size. " << Pcsize << endl;
     cout << endl;
 */
-
+/*
 //2.平面検出    
     pcl::ModelCoefficients::Ptr coefficients (new pcl::ModelCoefficients);
     pcl::PointIndices::Ptr inliers (new pcl::PointIndices);
@@ -110,7 +110,7 @@ main(int argc,char **argv)
         cloud->points[inliers->indices[i]].g = 0;
         cloud->points[inliers->indices[i]].b = 255;
     }
-
+*/
 
 //3. 縮小 Reduction
 
@@ -178,3 +178,4 @@ main(int argc,char **argv)
     return(0);
 
 }
+

@@ -1896,20 +1896,20 @@ clean: beginner_tutorials/CMakeFiles/listener.dir/clean
 
 # Convenience name for "all" pass in the directory.
 get_sensor_data/all: get_sensor_data/CMakeFiles/ReductPcd.dir/all
+get_sensor_data/all: get_sensor_data/CMakeFiles/ReductPcd2.dir/all
 get_sensor_data/all: get_sensor_data/CMakeFiles/cloudtorange.dir/all
 get_sensor_data/all: get_sensor_data/CMakeFiles/clustering.dir/all
 get_sensor_data/all: get_sensor_data/CMakeFiles/getKinectdata.dir/all
-get_sensor_data/all: get_sensor_data/CMakeFiles/getKinectdata2.dir/all
 get_sensor_data/all: get_sensor_data/CMakeFiles/pcTocv.dir/all
 get_sensor_data/all: get_sensor_data/CMakeFiles/visualization.dir/all
 .PHONY : get_sensor_data/all
 
 # Convenience name for "clean" pass in the directory.
 get_sensor_data/clean: get_sensor_data/CMakeFiles/ReductPcd.dir/clean
+get_sensor_data/clean: get_sensor_data/CMakeFiles/ReductPcd2.dir/clean
 get_sensor_data/clean: get_sensor_data/CMakeFiles/cloudtorange.dir/clean
 get_sensor_data/clean: get_sensor_data/CMakeFiles/clustering.dir/clean
 get_sensor_data/clean: get_sensor_data/CMakeFiles/getKinectdata.dir/clean
-get_sensor_data/clean: get_sensor_data/CMakeFiles/getKinectdata2.dir/clean
 get_sensor_data/clean: get_sensor_data/CMakeFiles/pcTocv.dir/clean
 get_sensor_data/clean: get_sensor_data/CMakeFiles/visualization.dir/clean
 .PHONY : get_sensor_data/clean
@@ -1954,13 +1954,48 @@ clean: get_sensor_data/CMakeFiles/ReductPcd.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target get_sensor_data/CMakeFiles/ReductPcd2.dir
+
+# All Build rule for target.
+get_sensor_data/CMakeFiles/ReductPcd2.dir/all:
+	$(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd2.dir/build.make get_sensor_data/CMakeFiles/ReductPcd2.dir/depend
+	$(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd2.dir/build.make get_sensor_data/CMakeFiles/ReductPcd2.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pancho/research_ws/build/CMakeFiles  4
+	@echo "Built target ReductPcd2"
+.PHONY : get_sensor_data/CMakeFiles/ReductPcd2.dir/all
+
+# Include target in all.
+all: get_sensor_data/CMakeFiles/ReductPcd2.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+get_sensor_data/CMakeFiles/ReductPcd2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pancho/research_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/ReductPcd2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pancho/research_ws/build/CMakeFiles 0
+.PHONY : get_sensor_data/CMakeFiles/ReductPcd2.dir/rule
+
+# Convenience name for target.
+ReductPcd2: get_sensor_data/CMakeFiles/ReductPcd2.dir/rule
+.PHONY : ReductPcd2
+
+# clean rule for target.
+get_sensor_data/CMakeFiles/ReductPcd2.dir/clean:
+	$(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd2.dir/build.make get_sensor_data/CMakeFiles/ReductPcd2.dir/clean
+.PHONY : get_sensor_data/CMakeFiles/ReductPcd2.dir/clean
+
+# clean rule for target.
+clean: get_sensor_data/CMakeFiles/ReductPcd2.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target get_sensor_data/CMakeFiles/cloudtorange.dir
 
 # All Build rule for target.
 get_sensor_data/CMakeFiles/cloudtorange.dir/all:
 	$(MAKE) -f get_sensor_data/CMakeFiles/cloudtorange.dir/build.make get_sensor_data/CMakeFiles/cloudtorange.dir/depend
 	$(MAKE) -f get_sensor_data/CMakeFiles/cloudtorange.dir/build.make get_sensor_data/CMakeFiles/cloudtorange.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pancho/research_ws/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pancho/research_ws/build/CMakeFiles  5
 	@echo "Built target cloudtorange"
 .PHONY : get_sensor_data/CMakeFiles/cloudtorange.dir/all
 
@@ -1995,7 +2030,7 @@ clean: get_sensor_data/CMakeFiles/cloudtorange.dir/clean
 get_sensor_data/CMakeFiles/clustering.dir/all:
 	$(MAKE) -f get_sensor_data/CMakeFiles/clustering.dir/build.make get_sensor_data/CMakeFiles/clustering.dir/depend
 	$(MAKE) -f get_sensor_data/CMakeFiles/clustering.dir/build.make get_sensor_data/CMakeFiles/clustering.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pancho/research_ws/build/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pancho/research_ws/build/CMakeFiles  6
 	@echo "Built target clustering"
 .PHONY : get_sensor_data/CMakeFiles/clustering.dir/all
 
@@ -2030,7 +2065,7 @@ clean: get_sensor_data/CMakeFiles/clustering.dir/clean
 get_sensor_data/CMakeFiles/getKinectdata.dir/all:
 	$(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata.dir/build.make get_sensor_data/CMakeFiles/getKinectdata.dir/depend
 	$(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata.dir/build.make get_sensor_data/CMakeFiles/getKinectdata.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pancho/research_ws/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pancho/research_ws/build/CMakeFiles  7
 	@echo "Built target getKinectdata"
 .PHONY : get_sensor_data/CMakeFiles/getKinectdata.dir/all
 
@@ -2056,41 +2091,6 @@ get_sensor_data/CMakeFiles/getKinectdata.dir/clean:
 
 # clean rule for target.
 clean: get_sensor_data/CMakeFiles/getKinectdata.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target get_sensor_data/CMakeFiles/getKinectdata2.dir
-
-# All Build rule for target.
-get_sensor_data/CMakeFiles/getKinectdata2.dir/all:
-	$(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata2.dir/build.make get_sensor_data/CMakeFiles/getKinectdata2.dir/depend
-	$(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata2.dir/build.make get_sensor_data/CMakeFiles/getKinectdata2.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pancho/research_ws/build/CMakeFiles  7
-	@echo "Built target getKinectdata2"
-.PHONY : get_sensor_data/CMakeFiles/getKinectdata2.dir/all
-
-# Include target in all.
-all: get_sensor_data/CMakeFiles/getKinectdata2.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-get_sensor_data/CMakeFiles/getKinectdata2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pancho/research_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 get_sensor_data/CMakeFiles/getKinectdata2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pancho/research_ws/build/CMakeFiles 0
-.PHONY : get_sensor_data/CMakeFiles/getKinectdata2.dir/rule
-
-# Convenience name for target.
-getKinectdata2: get_sensor_data/CMakeFiles/getKinectdata2.dir/rule
-.PHONY : getKinectdata2
-
-# clean rule for target.
-get_sensor_data/CMakeFiles/getKinectdata2.dir/clean:
-	$(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata2.dir/build.make get_sensor_data/CMakeFiles/getKinectdata2.dir/clean
-.PHONY : get_sensor_data/CMakeFiles/getKinectdata2.dir/clean
-
-# clean rule for target.
-clean: get_sensor_data/CMakeFiles/getKinectdata2.dir/clean
 .PHONY : clean
 
 #=============================================================================

@@ -878,6 +878,19 @@ ReductPcd/fast:
 .PHONY : ReductPcd/fast
 
 #=============================================================================
+# Target rules for targets named ReductPcd2
+
+# Build rule for target.
+ReductPcd2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ReductPcd2
+.PHONY : ReductPcd2
+
+# fast build rule for target.
+ReductPcd2/fast:
+	$(MAKE) -f get_sensor_data/CMakeFiles/ReductPcd2.dir/build.make get_sensor_data/CMakeFiles/ReductPcd2.dir/build
+.PHONY : ReductPcd2/fast
+
+#=============================================================================
 # Target rules for targets named cloudtorange
 
 # Build rule for target.
@@ -915,19 +928,6 @@ getKinectdata: cmake_check_build_system
 getKinectdata/fast:
 	$(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata.dir/build.make get_sensor_data/CMakeFiles/getKinectdata.dir/build
 .PHONY : getKinectdata/fast
-
-#=============================================================================
-# Target rules for targets named getKinectdata2
-
-# Build rule for target.
-getKinectdata2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 getKinectdata2
-.PHONY : getKinectdata2
-
-# fast build rule for target.
-getKinectdata2/fast:
-	$(MAKE) -f get_sensor_data/CMakeFiles/getKinectdata2.dir/build.make get_sensor_data/CMakeFiles/getKinectdata2.dir/build
-.PHONY : getKinectdata2/fast
 
 #=============================================================================
 # Target rules for targets named pcTocv
@@ -1037,10 +1037,10 @@ help:
 	@echo "... topic_tools_generate_messages_py"
 	@echo "... listener"
 	@echo "... ReductPcd"
+	@echo "... ReductPcd2"
 	@echo "... cloudtorange"
 	@echo "... clustering"
 	@echo "... getKinectdata"
-	@echo "... getKinectdata2"
 	@echo "... pcTocv"
 	@echo "... visualization"
 	@echo "... outputPc"

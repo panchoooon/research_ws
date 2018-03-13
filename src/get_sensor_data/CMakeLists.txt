@@ -29,10 +29,10 @@ target_link_libraries (getKinectdata ${PCL_LIBRARIES})
 target_link_libraries(getKinectdata ${OpenCV_LIBRARIES})
 
 #for getKinectdata2.cpp
-add_executable(getKinectdata2 src/getKinectdata2.cpp)
-target_link_libraries(getKinectdata2 ${catkin_LIBRARIES})
-target_link_libraries (getKinectdata2 ${PCL_LIBRARIES})
-target_link_libraries(getKinectdata2 ${OpenCV_LIBRARIES})
+#add_executable(getKinectdata2 src/getKinectdata2.cpp)
+#target_link_libraries(getKinectdata2 ${catkin_LIBRARIES})
+#target_link_libraries (getKinectdata2 ${PCL_LIBRARIES})
+#target_link_libraries(getKinectdata2 ${OpenCV_LIBRARIES})
 
 #for visualization.cpp
 add_executable(visualization src/visualization.cpp)
@@ -59,6 +59,13 @@ add_executable(ReductPcd src/ReductPcd.cpp)
 target_link_libraries(ReductPcd ${catkin_LIBRARIES})
 target_link_libraries(ReductPcd ${PCL_LIBRARIES})
 target_link_libraries(ReductPcd ${OpenCV_LIBRARIES})
+
+#for ReductPcd2.cpp
+add_executable(ReductPcd2 src/ReductPcd2.cpp)
+target_link_libraries(ReductPcd2 ${catkin_LIBRARIES})
+target_link_libraries(ReductPcd2 ${PCL_LIBRARIES})
+target_link_libraries(ReductPcd2 ${OpenCV_LIBRARIES})
+
 
 #for cloudtorange.cpp
 add_executable(cloudtorange src/cloudtorange.cpp)
